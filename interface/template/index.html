@@ -1,0 +1,23 @@
+{{define "head"}}
+<title>Art decoder</title>
+{{end}}
+{{define "body"}}
+<div class="container">
+    <h1 class="heading">Art Decoder</h1> 
+    <form action="/decode" method="post">
+        <textarea rows="25" cols="50" name="input"></textarea> </p>
+        <div class="cont">
+            <div class="decode">
+                <input type="radio" id="decode" class="radio-button" name="processMethod" value="decode" />
+                <label class="radio-label" for="decode">Decode</label>
+            </div>
+            <div class="encode">
+                <input type="radio" id="encode" name="processMethod" value="encode" />
+                <label class="radio-label" for="encode">Encode</label><br>
+            </div>
+        </div>
+        <p><input type="submit" value="Generate"/></p>
+    </form>
+    <p>Status code: {{.StatusCode}}</p>
+</div>
+{{end}}
