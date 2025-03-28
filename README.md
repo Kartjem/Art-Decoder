@@ -6,7 +6,7 @@ Installation
 
 Clone the repository:
 
-git clone https://gitea.kood.tech/artjomkulikovski/art
+git clone https://github.com/Kartjem/Art-Decoder.git
 
 Navigate to the project directory:
 
